@@ -173,9 +173,12 @@ nav a {
 }
 
 .filter:hover {
-    color: #0065FC;
-    box-shadow: ;
-    le faire grossir
+    background-color: #0065FC;
+}
+
+.filter a:hover {
+    color:white;
+
 }
 .fas {
     display: flex;
