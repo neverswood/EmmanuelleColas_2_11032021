@@ -14,7 +14,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: inline;
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 
@@ -34,13 +34,13 @@ header {
     font-size: 1.3em;/* a changer*/
     font-weight: bold;
     margin-top: 20px;
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 .titre_secondaire {
     font-size: 1.1em;
     margin-top: 10px;
-    margin-left: 30px;
+    margin-left: 50px;
     font-weight: normal;
 }
 
@@ -114,7 +114,7 @@ nav a {
 
 .search-bar {
     display: flex;
-    margin-left: 30px;
+    margin-left: 50px;
   }
 
   .button {
@@ -139,50 +139,68 @@ nav a {
 
 
 /* FILTER */
-
 .filtres {
     display: flex;
-        margin-left: 30px;
-    margin-top: 20px;
-    list-style: none;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.filtres ul{
+    display: flex;
 }
 
 .filtres h2 {
-    margin-top: 25px;
+    margin-top: 30px;
+}*/
+.button-filter {
+    display: flex;
 }
-.filter {
+.button-filter li {
+    display: flex;
     border: solid 3px;
     border-color:  #F2F2F2;
-    width: 190px;
+    /*width: 190px;*/
+    height: 20px;
     border-radius: 70px / 50px;
     padding: 10px;
     margin-right: 30px;
-    display: inline;
 }
 
-.filter i{
+.button-filter i{
+    display: flex;
+    align-items: center; /*centre l'icone sur la hauteur*/
+    justify-content: center; /*centre l'icone sur la largeur*/
     color: #0065FC;
     background-color: #DEEBFF;
     padding: 12px;
     margin-left: 0;
-    width:15px;
-    height:15px;
+    width:25px;
+    height: 25px;
     border-radius: 100px;
     position: relative;
-    left: -10px; /* position de l'icone relative à gauche du filtre*/
+    right: 15px;
+    bottom: 15px;
+     /* position de l'icone relative à gauche du filtre*/
 }
 
-.filter:hover {
-    background-color: #0065FC;
+.filters li:hover {
+    background-color: #0082fc;
+
 }
 
-.filter a:hover {
+.button-filter i a:hover {
     color:white;
-
 }
-.fas {
+
+.button-filter li:hover {
+    padding: 15px;
+}
+
+.fas:before {
     display: flex;
 }
+/*.fas {
+    display: flex;
+}*/
 #info {
     display: flex;
     justify-content: center;
@@ -199,13 +217,15 @@ nav a {
  .info {
      display: flex;
      align-items: center;
-     margin-left: 70px;
+     margin-left: 50px;
  }
 
  .filters a {
      color: black;
      font-weight: bold;
+     display: flex;
  }
+
 
 /* CONTAINER */
 
@@ -222,7 +242,7 @@ nav a {
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 #container1 h2 {
