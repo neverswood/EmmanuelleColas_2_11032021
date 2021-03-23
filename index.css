@@ -193,6 +193,7 @@ nav a {
 
 .button-filter li:hover {
     padding: 15px;
+    padding-left: 10px;
 }
 
 .fas:before {
