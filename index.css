@@ -14,7 +14,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: inline;
-    margin-left: 50px;
+    margin-left: 80px;
 }
 
 
@@ -34,13 +34,13 @@ header {
     font-size: 1.3em;/* a changer*/
     font-weight: bold;
     margin-top: 20px;
-    margin-left: 50px;
+    margin-left: 80px;
 }
 
 .titre_secondaire {
     font-size: 1.1em;
     margin-top: 10px;
-    margin-left: 50px;
+    margin-left: 80px;
     font-weight: normal;
 }
 
@@ -114,7 +114,7 @@ nav a {
 
 .search-bar {
     display: flex;
-    margin-left: 50px;
+    margin-left: 80px;
   }
 
   .button {
@@ -141,7 +141,7 @@ nav a {
 /* FILTER */
 .filtres {
     display: flex;
-    margin-left: 50px;
+    margin-left: 80px;
     margin-top: 10px;
 }
 .filtres ul{
@@ -214,11 +214,13 @@ nav a {
     border: #F2F2F2 solid;
     width: 30px;
     height: 30px;
+    margin-right: 15px;
 }
  .info {
      display: flex;
      align-items: center;
-     margin-left: 50px;
+     margin-left: 80px;
+     margin-bottom: 20px;
  }
 
  .filters a {
@@ -235,9 +237,11 @@ nav a {
     justify-content: space-around; /* le contenaire 1 et 2 son espacé*/
 }
 
+/* CONTAINER 1 */
+
 #container1 {
-    width: 1000px;
-    height: 600px;
+    width: 900px;
+    height: 625px;
     background-color: #F2F2F2;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
@@ -247,24 +251,27 @@ nav a {
 }
 
 #container1 h2 {
+    color: black;
     padding-left:10px;
     margin: 0px;
+    padding-top: 5px;
 }
 
 #container1 p {
+    color: black;
     padding-left:10px;
     margin-top: 5px;
 }
 
 .link-hosting {
-    padding-left: 50px;
+    padding-left: 40px;
     padding-right: 50px;
     background-color: #F2F2F2;
     display: grid; /*création d'une grille sur 3 colonnes et 4 lignes*/
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
     grid-column-gap: 10px; /* espace entre les colonnes*/
-    grid-row-gap: 10px; /* espace entre les lignes*/
+    grid-row-gap: 30px; /* espace entre les lignes*/
     grid-template-areas: 
                          "en2 en3 en4"
                          "en5 en6 en7";
@@ -316,12 +323,17 @@ nav a {
     grid-area: en7;
 }
  
-#hebergements {
-    padding-left: 50px;
-    padding-top: 50px;
-    margin-top: 0px;
+#hosting {
+    padding-left: 40px;
+    padding-top: 40px;
 }
 
+.enfant7 {
+    padding-left: 45px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+/* CONTAINER 2*/
 
 .populaire {
     height: 700px;
@@ -334,14 +346,18 @@ nav a {
     display: flex;
     flex-direction: column;
     margin-right: 30px;
-    /*flex: 1.2;
-    position: relative; */
+    margin-top: 20px;
 }
 
 .populaire img{
     width: 100px;
     height: 70px;
     border-radius: 5%;
+}
+
+.populaire h1 {
+    padding-left: 30px;
+    padding-top: 25px;
 }
 
 
