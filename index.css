@@ -79,6 +79,11 @@ nav ul {
     color: #0065FC;/* couleur de s'inscrire*/
     font-weight: bolder;
     padding: 60px 40px;
+    margin-top: 0;
+}
+
+.register a {
+    padding-top: 60px;
 }
 
 .active a{
@@ -94,6 +99,10 @@ nav ul {
 .not-active {
     border-top: solid transparent ;/*bordure bleu en haut*/ 
     padding: 60px 40px;
+}
+
+.not-active a {
+
 }
 
 .not-active:hover {
