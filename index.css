@@ -6,7 +6,7 @@
 body {
     color: black;
     margin: 0;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 header {
@@ -33,7 +33,7 @@ header {
 .titre_principal {
     font-size: 1.3em;/* a changer*/
     font-weight: bold;
-    margin: 20px 60px 0 60px;
+    margin: 0px 60px 0 60px;
 }
 
 .titre_secondaire {
@@ -75,34 +75,27 @@ nav ul {
     margin-top: 0;
 }
 
-.register {
-    color: #0065FC;/* couleur de s'inscrire*/
-    font-weight: bolder;
+.registers {
+        font-weight: bolder;
     padding: 60px 40px;
-    margin-top: 0;
 }
 
-.register a {
-    padding-top: 60px;
+.registers a {
+    color: #0065FC;/* couleur de s'inscrire*/
 }
 
 .active a{
     color: #0065FC;
-    margin-top: 0px;
 }
 
 .active {
-    padding: 60px 40px;
+    padding: 60px 27px;
     border-top: solid #0065FC;
 }
 
 .not-active {
     border-top: solid transparent ;/*bordure bleu en haut*/ 
-    padding: 60px 40px;
-}
-
-.not-active a {
-
+    padding: 60px 20px;
 }
 
 .not-active:hover {
@@ -113,30 +106,13 @@ nav ul {
     color: #0065FC;
 }
 
-/*.not-active a {
-    margin-top: 60px;
-}*/
-
-/*.not-active:hover {
-    color: #0065FC;
-    border-top: solid #0065FC; /*bordure bleu en haut au survol*/
-
-/*nav a {
-    font-size: 1.3em;
-    text-decoration: none;
-    /*margin: 20px;*/
-    /*margin-top: 0 20px 20px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}*/
-
 /* SEARCH BUTTON */
 
 form {
     display: flex;
     margin-left: 60px;
-    padding: 50px;
+    padding-top: 10px;
+    height: 40px;
 }
 
 .button {
@@ -145,17 +121,25 @@ form {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border: 0;
+    width: 120px;
   }
   
 form i {
-    display: flex;
     background-color: #F2F2F2;
-    padding: 10px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 15px 0 0 15px;
+    width: 30px;
+    height: 27px;
 }
 .search-zone {
     font-weight: bold;
+    width: 190px;
+    border-right: none;
+    border-left: none;
+    border-top: solid 1px #F2F2F2;
+    border-bottom: solid 1px #F2F2F2;
+    padding: 20px;
 }
 
 
@@ -170,7 +154,7 @@ form i {
 
 .filtres span {
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 .filtres ul{
     display: flex;
@@ -190,7 +174,7 @@ form i {
     height: 20px;
     border-radius: 70px / 50px;
     padding: 10px;
-    margin-right: 30px;
+    margin-right: 50px;
 }
 
 .button-filter i{
@@ -267,19 +251,16 @@ form i {
 /* CONTAINER 1 */
 
 #container1 {
-    width: 1100px;
+    width: 900px;
     height: 700px;
     background-color: #F2F2F2;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-radius: 20px;
     margin-left: 60px;
     padding-left: 20px;
 }
 
 #container1 h2 {
-    padding: 50px 0 10px 40px;
+    padding: 30px 0 10px 20px;
 }
 
 #container1 span {
@@ -288,27 +269,27 @@ form i {
 }
 
 .link-hosting {
-    padding-left: 40px;
-    padding-right: 50px;
+    padding-left: 20px;
     background-color: #F2F2F2;
     display: grid; /*création d'une grille sur 3 colonnes et 4 lignes*/
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
-    grid-column-gap: 40px; /* espace entre les colonnes*/
-    grid-row-gap: 40px; /* espace entre les lignes*/
+    /*grid-column-gap: 30px;*/
+    grid-row-gap: 30px; /* espace entre les lignes*/
     grid-template-areas: 
                          "en2 en3 en4"
                          "en5 en6 en7";
 }
 
 #container1 li {
-    width: 300px;
+    width: 240px;
     height: 220px;
     background-color: white;
     border-style: solid solid none solid;
     border-width: 0.5rem;
     border-color: white;
-    border-radius: 5%;
+    border-radius: 20px;
+    margin-right: 20px;
 }
 
 #container1 img{
@@ -351,7 +332,7 @@ form i {
 }
 
 .enfant7 {
-    padding-left: 45px;
+    padding-left: 20px;
     padding-top: 10px;
     font-weight: bold;
 }
@@ -361,7 +342,7 @@ form i {
     margin: 5px 0 5px 0;
 }
 
-.star {
+#container1 .star {
     margin: 5px 0 0 10px;
 }
 
@@ -376,32 +357,29 @@ form i {
 
 .populaire {
     height: 700px;
-    width: 600px;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    width: 425px;
+    border-radius: 20px;
     background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
     margin-right: 60px;
-    margin-top: 20px
 }
 
 .populaire li {
     display: flex;
-    width: 475px;
+    width: 355px;
     height: 150px;
     background-color: white;
     border-style: solid none solid solid;
     border-width: 0.5rem;
     border-color: white;
-    border-radius: 5%;
-    margin-bottom: 40px;
+    border-radius: 20px;
+    margin-bottom: 30px;
 }
 
 .populaire ul {
-    margin-top: 40px;
+    padding-left: 30px;
+    margin-top: 0;
 }
 
 .populaire img{
@@ -410,16 +388,26 @@ form i {
     width: 150px;
     height: 150px;
     object-fit: cover;   
-   /* border-radius: 10px 0 0 0;*/
 }
 
-.populaire h1 {
-    padding-left: 30px;
-    padding-top: 25px;
+.populaire a {
+    display: flex;
 }
-
 .text {
     display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.text .star {
+    margin: 30px 0 0 10px;
+}
+.populaire h2 {
+    padding: 30px 0 10px 40px;
+}
+
+.populaire h2 i {
+    padding-left: 80px;
 }
 
 
