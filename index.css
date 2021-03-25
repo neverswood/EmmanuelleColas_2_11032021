@@ -250,7 +250,7 @@ form i {
 
 /* CONTAINER 1 */
 
-#container1 {
+.hosting {
     width: 900px;
     height: 700px;
     background-color: #F2F2F2;
@@ -259,11 +259,11 @@ form i {
     padding-left: 20px;
 }
 
-#container1 h2 {
+.hosting h2 {
     padding: 30px 0 10px 20px;
 }
 
-#container1 span {
+.hosting span {
     color: black;
     padding-left:10px;
 }
@@ -281,7 +281,7 @@ form i {
                          "en5 en6 en7";
 }
 
-#container1 li {
+.hosting li {
     width: 240px;
     height: 220px;
     background-color: white;
@@ -292,7 +292,7 @@ form i {
     margin-right: 20px;
 }
 
-#container1 img{
+.hosting img{
     border-top-left-radius: 10%;
     border-top-right-radius: 10%;
     width: 100%;
@@ -337,12 +337,12 @@ form i {
     font-weight: bold;
 }
 
-#container1 ul h3 {
+.hosting ul h3 {
     padding-left: 10px;
     margin: 5px 0 5px 0;
 }
 
-#container1 .star {
+.hosting .star {
     margin: 5px 0 0 10px;
 }
 
@@ -412,7 +412,75 @@ form i {
 
 
 
+
 /* ACTIVITIES */
+
+.activities ul {
+        padding-left: 20px;
+        display: grid; /*création d'une grille sur 3 colonnes et 4 lignes*/
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px; /* espace entre les lignes*/
+        grid-template-areas: 
+                             "item8 item9 item11 item12"
+                             "item8 item10 item11 item13";
+}
+    
+
+.activities img{
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    width: 100%;
+    height: 60%;
+    object-fit: cover;   
+    border-radius: 10px 10px 0 0;
+ }
+
+
+ .item8 {
+     grid-area: item8;
+     width: 220px;
+     height: 500px;
+ }
+
+ .item9 {
+     grid-area: item9;
+     width: 220px;
+     height: 220px;
+ }
+
+ .item10 {
+     grid-area: item10;
+     width: 220px;
+     height: 220px;
+ }
+
+ .item11 {
+     grid-area: item11;
+     width: 220px;
+     height: 500px;
+ }
+
+ .item12 {
+     grid-area: item12;
+     width: 220px;
+     height: 220px;
+ }
+
+ .item13 {
+     grid-area: item13;
+     width: 220px;
+     height: 220px;
+ }
+
+ 
+.activities li {
+    background-color: white;
+    border-radius: 20px;
+    margin-right: 20px;
+    box-shadow: 1px 1px 12px #d8d5d5;
+}
 
 /* FOOTER */
 
