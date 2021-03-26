@@ -415,6 +415,19 @@ form i {
 
 /* ACTIVITIES */
 
+.activities {
+    /*width: 900px;*/
+    height: 700px;
+    border-radius: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding: 60px 0 0 0px;
+}
+
+.activities h2 {
+    margin-bottom: 30px;
+}
+
 .activities ul {
         padding-left: 20px;
         display: grid; /*création d'une grille sur 3 colonnes et 4 lignes*/
@@ -432,7 +445,7 @@ form i {
     border-top-left-radius: 10%;
     border-top-right-radius: 10%;
     width: 100%;
-    height: 60%;
+    /*height: 60%;*/
     object-fit: cover;   
     border-radius: 10px 10px 0 0;
  }
@@ -442,12 +455,21 @@ form i {
      grid-area: item8;
      width: 220px;
      height: 500px;
+     padding-left: 0;
+ }
+
+ .item8 img {
+     height: 90%;
  }
 
  .item9 {
      grid-area: item9;
      width: 220px;
      height: 220px;
+ }
+
+ .item9 img {
+     height: 30%;
  }
 
  .item10 {
@@ -478,9 +500,10 @@ form i {
 .activities li {
     background-color: white;
     border-radius: 20px;
-    margin-right: 20px;
+    /*margin-right: 20px;*/
     box-shadow: 1px 1px 12px #d8d5d5;
 }
+
 
 /* FOOTER */
 
@@ -488,6 +511,10 @@ form i {
     display: flex;
     background-color: #F2F2F2;
     justify-content: space-around;
+}
+
+.footer ul{
+    padding-left: 0;
 }
 
 
