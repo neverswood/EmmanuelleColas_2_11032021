@@ -60,13 +60,13 @@ ul li a {
 }
 
 /* NAVIGATION */
-nav {
+.nav1 {
     display: flex;
     writing-mode: horizontal-tb; /* met hebergement, activité et s'inscrire l'un à coté de l'autre */
     margin-top: 0px;
 }
 
-nav ul {
+.nav1 ul {
     display: flex;
     margin-top: 0;
 }
@@ -103,6 +103,10 @@ nav ul {
 }
 
 .nav2 {
+    display: none;
+}
+
+#logoreg {
     display: none;
 }
 
@@ -289,27 +293,27 @@ nav ul {
  }
 
 
-.link-hosting .enfant1 {
+.link-hosting .item1 {
     grid-area: en2;
 }
 
-.link-hosting .enfant2 {
+.link-hosting .item2 {
     grid-area: en3;
 }
 
-.link-hosting .enfant3 {
+.link-hosting .item3 {
     grid-area: en4;
 }
 
-.link-hosting .enfant4 {
+.link-hosting .item4 {
     grid-area: en5;
 }
 
-.link-hosting .enfant5 {
+.link-hosting .item5 {
     grid-area: en6;
 }
 
-.link-hosting .enfant6 {
+.link-hosting .item6 {
     grid-area: en7;
 }
  
@@ -318,7 +322,7 @@ nav ul {
     padding-top: 40px;
 }
 
-.enfant7 {
+.item7 {
     padding-left: 20px;
     padding-top: 10px;
     font-weight: bold;
@@ -342,7 +346,7 @@ nav ul {
 }
 /* CONTAINER 2*/
 
-.populaire {
+.popular {
     height: 700px;
     width: 28%;
     border-radius: 20px;
@@ -352,7 +356,7 @@ nav ul {
     margin-right: 50px;
 }
 
-.populaire li {
+.popular li {
     display: flex;
     width: 90%;
     height: 150px;
@@ -364,12 +368,12 @@ nav ul {
     margin-bottom: 30px;
 }
 
-.populaire ul {
+.popular ul {
     padding-left: 30px;
     margin-top: 0;
 }
 
-.populaire img{
+.popular img{
     border-top-left-radius: 5%;
     border-bottom-left-radius: 5%;
     width: 150px;
@@ -377,7 +381,7 @@ nav ul {
     object-fit: cover;   
 }
 
-.populaire a {
+.popular a {
     display: flex;
 }
 .text {
@@ -389,11 +393,11 @@ nav ul {
 .text .star {
     margin: 30px 0 0 10px;
 }
-.populaire h2 {
+.popular h2 {
     padding: 30px 0 10px 40px;
 }
 
-.populaire h2 i {
+.popular h2 i {
     padding-left: 80px;
 }
 
@@ -531,13 +535,84 @@ footer ul{
         display: none;
     }
 
+    .nav2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    .reg {
+        float: right;
+        color: #0065FC;
+        font-weight: bold;
+        margin: 20px 0 50px 165px;
+    }
+
+    .nav-list2 {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .active2 {
+        padding: 0 12% 3% 31%;
+        margin: 0;
+        border-bottom: solid #0065FC;
+    }
+
+    .active2 a {
+        color: #0065FC;
+    }
+
+    .not-active2 {
+        padding: 0 40% 3% 15%;
+        margin: 0;
+        border-bottom: solid #F2F2F2;
+    }
+
+    .not-active2:hover {
+        border-bottom: solid #0065FC;
+    }
+
+
+    header {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin: 0 0 0 20px;
+    }
+    
+    #logoreg {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 20px;        
+    }
+
+    #logoreg img {
+        display: flex;
+        height: 50px;
+    }
+
+    .titre_principal {
+        margin: 10px 0 0 20px;
+    }
+
+    .titre_secondaire {
+        margin-left: 20px;
+    }
+
     .form1 {
         display: none;
     }
 
     .form2 {
         display: flex;
-        margin-left: 60px;
+        margin-left: 20px;
         padding-top: 10px;
         height: 40px;
     }
@@ -588,7 +663,8 @@ footer ul{
     }
 
     #info {
-        width: 11%;
+        width: 25px;
+        height: 25px;
     }
 
     #hosting {
@@ -598,9 +674,6 @@ footer ul{
    #hosting-popular {
        display: flex;
        flex-direction: column-reverse;
-       /*justify-content: center;
-       padding: auto;
-       margin: auto;*/
    }
 
    .link-hosting {
@@ -631,26 +704,26 @@ footer ul{
 
    }
    
-   .populaire {
+   .popular {
        width: auto;
        margin: 0;
        border-radius: 0;
 
    }
 
-   .populaire h2 {
+   .popular h2 {
        padding: 30px 0 10px 20px;
    }
 
-   .populaire h2 i {
+   .popular h2 i {
        padding-left: 50px;
    }
-   .populaire li {
+   .popular li {
        width: auto;
        margin: 0 30px 10px 0;
    }
 
-   .populaire ul {
+   .popular ul {
        display: flex;
        flex-direction: column;
        justify-content: center;
