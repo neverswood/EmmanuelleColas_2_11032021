@@ -107,27 +107,32 @@ nav img {
 
 /* SEARCH BUTTON */
 
-.form2 {
-    display: none;
-}
-
-.form1 {
+form {
     display: flex;
     margin-left: 60px;
     padding-top: 10px;
     height: 40px;
 }
 
-.button {
+.btn {
     background-color: #0065FC;
     color: white;
+    border: 0;
+    width: 8%;
+  }
+
+.btn1 {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border: 0;
     width: 8%;
+}
+
+.btn2 {
+      display: none;
   }
   
-.form1 i {
+.fa-map-marker-alt {
     background-color: #F2F2F2;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -137,16 +142,12 @@ nav img {
 }
 .search-zone {
     font-weight: bold;
-    /*width: 190px;*/
     border-right: none;
     border-left: none;
     border-top: solid 1px #F2F2F2;
     border-bottom: solid 1px #F2F2F2;
     padding: 20px;
 }
-
-
-
 
 /* FILTER */
 
@@ -599,39 +600,32 @@ footer ul{
         margin-left: 20px;
     }
 
-    .form1 {
+    .btn1 {
         display: none;
     }
 
-    .form2 {
-        display: flex;
-        margin-left: 20px;
-        padding-top: 10px;
-        height: 40px;
-    }
-
-    .form2 .button {
-        background-color: #0065FC;
-        color: white;
-        border-radius: 10px;
-        border: 0;
-        width: 12%;
-      }
-      
-    .fa-map-marker-alt {
-        background-color: #F2F2F2;
-        border-top-left-radius: 15px;
-        border-bottom-left-radius: 15px;
-        padding: 15px 0 0 15px;
-        width: 30px;
-        height: 67%;
-    }
-    .form2 .search-zone {
-        font-weight: bold;
-        border-right: none;
-        border-left: none;
+    form {
         border-top: solid 1px #F2F2F2;
         border-bottom: solid 1px #F2F2F2;
+    }
+    .btn2 {
+        display: flex;
+        border-radius: 10px;
+        width: 10%;
+        height: 110%;
+        position: relative;
+        bottom: 1px;
+    }
+
+    .btn2 i {
+        background-color: #0065FC;
+        color: white;
+        padding-top: 13px;
+    }
+
+    .search-zone {
+        font-weight: bold;
+        border: none;
         padding: 20px;
     }
 
