@@ -136,7 +136,7 @@ form {
     background-color: #F2F2F2;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    padding: 15px 0 0 15px;
+    padding: 13px 0 2px 16px;
     width: 30px;
     height: 67%;
 }
@@ -527,6 +527,8 @@ footer ul{
 
 @media all and (max-width: 1024px) {
 
+    /* HEADER */
+
     header {
         width: auto;
         margin: 0;
@@ -592,35 +594,49 @@ footer ul{
         color: #0065FC;
     }
 
+    /* --*/
+
     .titre_principal {
         margin: 10px 0 0 20px;
     }
 
     .titre_secondaire {
-        margin-left: 20px;
+        margin: 20px 0 50px 20px;
     }
+
+    /* SEARCH BUTTON*/
 
     .btn1 {
         display: none;
     }
 
     form {
+        width: 288px;
         border-top: solid 1px #F2F2F2;
         border-bottom: solid 1px #F2F2F2;
+        padding-top: 0;
+        margin: 0 132px 0 15px;
+        border-radius: 30px;
     }
+
+    .fa-map-marker-alt {
+        padding: 12px 1px 3px 17px;
+    }
+
     .btn2 {
         display: flex;
+        justify-content: center;
         border-radius: 10px;
-        width: 10%;
-        height: 110%;
+        width: 46px;
+        height: 43px;
         position: relative;
-        bottom: 1px;
+        bottom: 2px;
     }
 
     .btn2 i {
         background-color: #0065FC;
         color: white;
-        padding-top: 13px;
+        padding-top: 15px;
     }
 
     .search-zone {
@@ -628,6 +644,8 @@ footer ul{
         border: none;
         padding: 20px;
     }
+
+    /* FILTER */
 
     .filtres {
         display: flex;
@@ -653,6 +671,8 @@ footer ul{
         width: 25px;
         height: 25px;
     }
+
+    /* CONTAINER */
 
     #hosting {
         padding-left: 20px;
@@ -748,6 +768,8 @@ footer ul{
    .activities img {
        height: 80%;
    }
+
+   /* FOOTER */
 
    footer {
        display: flex;
