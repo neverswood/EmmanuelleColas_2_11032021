@@ -10,14 +10,11 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
     margin: 0 60px 0 60px;
 }
 
 h1 {
     font-size: 1.3em;
-    font-weight: bold;
     margin: 0px 60px 0 60px;
 }
 
@@ -27,7 +24,7 @@ h1 {
     font-weight: normal;
 }
 
-h1 h2{
+h2{
     font-size: 1.3rem;
     font-weight: bold;
 }
@@ -47,7 +44,6 @@ ul li a {
 /* NAVIGATION */
 nav {
     display: flex;
-    width: 100%;
 }
 
 .nav-list {
@@ -58,7 +54,6 @@ nav {
 }
 
 nav img {
-    width: 100px;
     height: 50px;
     margin-top: 40px;
 }
@@ -117,13 +112,6 @@ form {
     border: 0;
     width: 8%;
   }
-
-/*.btn-search span {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border: 0;
-    width: 8%;
-}*/
   
 .fa-map-marker-alt {
     background-color: #F2F2F2;
@@ -153,9 +141,6 @@ form {
     font-weight: bold;
     margin-top: 30px;
 }
-.filter_content ul{
-    display: flex;
-}
 
 .filter_content h2 {
     margin-top: 30px;
@@ -164,7 +149,6 @@ form {
     display: flex;
 }
 .filter_list li {
-    display: flex;
     border: solid 3px;
     border-color:  #F2F2F2;
     height: 20px;
@@ -231,7 +215,6 @@ form {
 
 .hosting {
     width: 60%;
-    height: 700px;
     background-color: #F2F2F2;
     border-radius: 20px;
     margin-left: 60px;
@@ -334,7 +317,6 @@ form {
 /* CONTAINER 2*/
 
 .popular {
-    height: 700px;
     width: 28%;
     border-radius: 20px;
     background-color: #F2F2F2;
@@ -346,7 +328,6 @@ form {
 .popular li {
     display: flex;
     width: 90%;
-    height: 150px;
     background-color: white;
     border-style: solid none solid solid;
     border-width: 0.5rem;
