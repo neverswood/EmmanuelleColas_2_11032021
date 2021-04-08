@@ -12,8 +12,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin: 0 60px 0 60px;
 }
 
 h1 {
@@ -38,7 +37,7 @@ h3 {
 }
 
 a {
-    text-decoration: none;/* enlève le soulignements des liens*/
+    text-decoration: none;
 }
 
 ul li a {
@@ -63,13 +62,6 @@ nav img {
     height: 50px;
     margin-top: 40px;
 }
-
-/*.active, .not-active, .registers {
-    display: flex;
-    justify-content: flex-end;
-    align-content: space-between;
-
-}*/
 
 .nav-link {
     display: flex;
@@ -153,8 +145,7 @@ form {
 
 .filter_content {
     display: flex;
-    margin-left: 60px;
-    margin-top: 25px;
+    margin: 25px 0 0 60px;
 }
 
 .filter_content span {
@@ -219,8 +210,7 @@ form {
  .info {
      display: flex;
      align-items: center;
-     margin-left: 60px;
-     margin-bottom: 20px;
+     margin: 0 0 20px 60px;
  }
 
  .filters a {
@@ -232,8 +222,8 @@ form {
 /* CONTAINER */
 
 #hosting-popular {
-    display: flex; /* le contenaire 1 et 2 se place à côté*/
-    justify-content: space-between; /* le contenaire 1 et 2 son espacé d'un bout à l'autre*/
+    display: flex; 
+    justify-content: space-between; 
 }
 
 /* CONTAINER 1 */
@@ -258,14 +248,15 @@ form {
 
 .link_hosting {
     padding-left: 20px;
+    margin-bottom: 35px;
     background-color: #F2F2F2;
     display: grid; /*création d'une grille sur 3 colonnes et 2 lignes*/
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
     grid-row-gap: 30px; /* espace entre les lignes*/
     grid-template-areas: 
-                         "en2 en3 en4"
-                         "en5 en6 en7";
+                         "item1 item2 item3"
+                         "item4 item5 item6";
 }
 
 .hosting li {
@@ -290,38 +281,36 @@ form {
 
 
 .link_hosting .item1 {
-    grid-area: en2;
+    grid-area: item1;
 }
 
 .link_hosting .item2 {
-    grid-area: en3;
+    grid-area: item2;
 }
 
 .link_hosting .item3 {
-    grid-area: en4;
+    grid-area: item3;
 }
 
 .link_hosting .item4 {
-    grid-area: en5;
+    grid-area: item4;
 }
 
 .link_hosting .item5 {
-    grid-area: en6;
+    grid-area: item5;
 }
 
 .link_hosting .item6 {
-    grid-area: en7;
+    grid-area: item6;
 }
  
 #hosting {
-    padding-left: 40px;
-    padding-top: 40px;
+    padding: 40px 0 0 25px;
 }
 
-.item7 {
+.item7 a{
     color: black;
-    padding-left: 20px;
-    padding-top: 10px;
+    padding-left: 25px;
     font-weight: bold;
 }
 
@@ -435,62 +424,62 @@ form {
 
 
  .item8 {
-     grid-area: item8;
-     width: 220px;
-     height: 100%;
-     padding-left: 0;
+    grid-area: item8;
+    width: 220px;
+    height: 100%;
+    padding-left: 0;
  }
 
  .item8 img {
-     height: 88%;
+    height: 88%;
  }
 
  .item9 {
-     grid-area: item9;
-     width: 240px;
-     height: 100%;
+    grid-area: item9;
+    width: 240px;
+    height: 100%;
  }
 
  .item9 img {
-     height: 75%;
+    height: 75%;
 
  }
 
  .item10 {
-     grid-area: item10;
-     height: 80%;
-     margin-top: 50px;
+    grid-area: item10;
+    height: 80%;
+    margin-top: 50px;
  }
 
  .item10 img {
-     height: 70%;
+    height: 70%;
  }
 
  .item11 {
-     grid-area: item11;
-     height: 100%;
+    grid-area: item11;
+    height: 100%;
  }
 
  .item11 img {
-     height: 88%;
+    height: 88%;
  }
 
  .item12 {
-     grid-area: item12;
-     height: 85%;
+    grid-area: item12;
+    height: 85%;
  }
 
  .item12 img {
-     height: 70%;
+    height: 70%;
  }
 
  .item13 {
-     grid-area: item13;
+    grid-area: item13;
     height: 100%;
  }
 
  .item13 img {
-     height: 75%;
+    height: 75%;
  }
 
 .activities li {
@@ -691,8 +680,7 @@ footer ul{
     background-color: white;
     width: auto;
     margin-left: 0;
-    padding-left: 10px;
-    padding-right: 20px;
+    padding: 0 20px 0 10px;
     height: auto;
     display: flex;
     flex-direction: column;
