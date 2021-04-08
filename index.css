@@ -106,23 +106,24 @@ form {
     height: 40px;
 }
 
-.btn {
+.btn-search i {
+    display: none;
+}
+.btn-search {
     background-color: #0065FC;
     color: white;
-    border: 0;
-    width: 8%;
-  }
-
-.btn1 {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border: 0;
     width: 8%;
-}
-
-.btn2 {
-      display: none;
   }
+
+/*.btn-search span {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 0;
+    width: 8%;
+}*/
   
 .fa-map-marker-alt {
     background-color: #F2F2F2;
@@ -593,7 +594,7 @@ footer ul{
 
     /* SEARCH BUTTON*/
 
-    .btn1 {
+    .btn-search span {
         display: none;
     }
 
@@ -610,7 +611,7 @@ footer ul{
         padding: 12px 1px 3px 17px;
     }
 
-    .btn2 {
+    .btn-search {
         display: flex;
         justify-content: center;
         border-radius: 10px;
@@ -620,7 +621,8 @@ footer ul{
         bottom: 2px;
     }
 
-    .btn2 i {
+    .btn-search i {
+        display: flex;
         background-color: #0065FC;
         color: white;
         padding-top: 15px;
@@ -670,7 +672,7 @@ footer ul{
        flex-direction: column-reverse;
    }
 
-   .link-hosting {
+   .link_hosting {
        width: auto;
        display: flex;
        flex-direction: column;
@@ -692,7 +694,7 @@ footer ul{
        box-shadow: 1px 1px 12px #d8d5d5;
    }
    
-   .link-hosting {
+   .link_hosting {
        background-color: white;
 
    }
