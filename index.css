@@ -16,13 +16,13 @@ header {
     margin-right: 60px;
 }
 
-.titre_principal {
+h1 {
     font-size: 1.3em;
     font-weight: bold;
     margin: 0px 60px 0 60px;
 }
 
-.titre_secondaire {
+.secondary_title {
     font-size: 1.1em;
     margin: 10px 60px 10px 60px;
     font-weight: normal;
@@ -151,27 +151,27 @@ form {
 
 /* FILTER */
 
-.filtres {
+.filter_content {
     display: flex;
     margin-left: 60px;
     margin-top: 25px;
 }
 
-.filtres span {
+.filter_content span {
     font-weight: bold;
     margin-top: 30px;
 }
-.filtres ul{
+.filter_content ul{
     display: flex;
 }
 
-.filtres h2 {
+.filter_content h2 {
     margin-top: 30px;
 }
-.button-filter {
+.filter_list {
     display: flex;
 }
-.button-filter li {
+.filter_list li {
     display: flex;
     border: solid 3px;
     border-color:  #F2F2F2;
@@ -181,7 +181,7 @@ form {
     margin-right: 50px;
 }
 
-.button-filter i{
+.filter_list i{
     display: flex;
     align-items: center; /*centre l'icone sur la hauteur*/
     justify-content: center; /*centre l'icone sur la largeur*/
@@ -256,7 +256,7 @@ form {
     padding-left:10px;
 }
 
-.link-hosting {
+.link_hosting {
     padding-left: 20px;
     background-color: #F2F2F2;
     display: grid; /*création d'une grille sur 3 colonnes et 2 lignes*/
@@ -289,27 +289,27 @@ form {
  }
 
 
-.link-hosting .item1 {
+.link_hosting .item1 {
     grid-area: en2;
 }
 
-.link-hosting .item2 {
+.link_hosting .item2 {
     grid-area: en3;
 }
 
-.link-hosting .item3 {
+.link_hosting .item3 {
     grid-area: en4;
 }
 
-.link-hosting .item4 {
+.link_hosting .item4 {
     grid-area: en5;
 }
 
-.link-hosting .item5 {
+.link_hosting .item5 {
     grid-area: en6;
 }
 
-.link-hosting .item6 {
+.link_hosting .item6 {
     grid-area: en7;
 }
  
@@ -319,6 +319,7 @@ form {
 }
 
 .item7 {
+    color: black;
     padding-left: 20px;
     padding-top: 10px;
     font-weight: bold;
@@ -402,8 +403,7 @@ form {
 .activities {
     height: 700px;
     border-radius: 20px;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin: 0 60px 0 60px;
     padding: 60px 0 0 0px;
 }
 
@@ -417,22 +417,20 @@ form {
 
 .activities ul {
     padding-left: 0;
-        display: grid; /*création d'une grille sur 3 colonnes et 2 lignes*/
-        grid-template-columns: repeat(4,1fr);
-        grid-auto-rows: 250px;
-        grid-column-gap: 50px;
-        grid-template-areas: 
+    display: grid; 
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 250px;
+    grid-column-gap: 50px;
+    grid-template-areas: 
                              "item8 item9 item11 item12"
                              "item8 item10 item11 item13";
 }
     
 
 .activities img{
-    border-top-left-radius: 10%;
-    border-top-right-radius: 10%;
     width: 100%;
     object-fit: cover;   
-    border-radius: 10px 10px 0 0;
+    border-radius: 20px 20px 0 0;
  }
 
 
@@ -514,11 +512,11 @@ footer ul{
     padding-left: 0;
 }
 
-.foot {
+.footer_element {
     padding: 30px 200px 20px 60px;
 }
 
-.foot li {
+.footer_element li {
     padding-bottom: 10px;
 }
 
@@ -596,11 +594,11 @@ footer ul{
 
     /* --*/
 
-    .titre_principal {
+    h1 {
         margin: 10px 0 0 20px;
     }
 
-    .titre_secondaire {
+    .secondary_title {
         margin: 20px 0 50px 20px;
     }
 
@@ -647,19 +645,19 @@ footer ul{
 
     /* FILTER */
 
-    .filtres {
+    .filter_content {
         display: flex;
         flex-direction: column;
         margin-left: 20px;
     }
 
-    .button-filter {
+    .filter_list {
         padding: 0;
         display: flex;
         flex-wrap: wrap;
     }
 
-    .button-filter li {
+    .filter_list li {
         margin-bottom: 10px;
     }
 

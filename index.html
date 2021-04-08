@@ -13,60 +13,51 @@
 
 
 <body>
-    <div id="bloc_page">
-        <header>
+    <header>
 
-            <!--NAVIGATION-->
-            <nav class="nav">
-                <img src="./images/logo/Reservia.png" alt="logo" />
-                <a href="#" class="register">S'inscrire</a>
-                <ul class="nav-list">
-                    <li class="active"><a class="active-link" href="#hosting">Hébergements</a></li>
-                    <li class="not-active"><a class="not-active-link" href="#activities">Activités</a></li>
-                </ul>
-                <!--<a href="#" class="register">S'inscrire</a>-->
-            </nav>
-        </header>
-    </div>
+        <!--NAVIGATION-->
+        <nav>
+            <img src="./images/logo/Reservia.png" alt="logo" />
+            <a href="#" class="register">S'inscrire</a>
+            <ul class="nav-list">
+                <li class="active"><a class="active-link" href="#hosting">Hébergements</a></li>
+                <li class="not-active"><a class="not-active-link" href="#activities">Activités</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h2 class="titre_principal">Trouvez votre hébergement pour des vacances de rêve</h2>
-    <h3 class="titre_secondaire">En plein centre ville ou en pleine nature</h3>
+    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+    <h3 class="secondary_title">En plein centre ville ou en pleine nature</h3>
 
     <!--SEARCH BUTTON-->
     <form>
         <i class="fas fa-map-marker-alt"></i>
         <input class="search-zone" type="search" placeholder=" Marseille, France">
-        <button class="btn btn1">Rechercher</button>
-        <button class="btn btn2"><i class="fas fa-search"></i></button>
+        <button class="btn-search btn1"><span>Rechercher</span><i class="fas fa-search"></i></button>
+        <!--<button class="btn btn2"><i class="fas fa-search"></i></button>-->
     </form>
-    <!--<form class="form2">
-        <i class="fas fa-map-marker-alt"></i>
-        <input class="search-zone" type="search" placeholder=" Marseille, France">
-        <button class="button"><i class="fas fa-search"></i></button>
-    </form>-->
-
 
     <!--FILTERS-->
     <div class="filters">
-        <div class="filtres">
+        <div class="filter_content">
             <span>Filtres</span>
-            <ul class="button-filter">
-                <li class="filter-eco" data-filter="éco">
+            <ul class="filter_list">
+                <li>
                     <a href="#">
                         <i class="fas fa-money-bill-wave"></i>Économique
                     </a>
                 </li>
-                <li class="filter-fam" data-filter="Famille">
+                <li>
                     <a href="#">
                         <i class="fas fa-child"></i>Familial
                     </a>
                 </li>
-                <li class="filter-rom" data-filter="Rom">
+                <li>
                     <a href="#">
                         <i class="fas fa-heart"></i>Romantique
                     </a>
                 </li>
-                <li class="filter-an" data-filter="Animaux">
+                <li>
                     <a href="#">
                         <i class="fas fa-dog"></i>Animaux autorisés
                     </a>
@@ -83,11 +74,12 @@
 
     <!--HOSTING AND POPULAR-->
     <div id="hosting-popular">
+
         <!--HOSTING SECTION-->
 
         <section class="hosting">
             <h2 id="hosting">Hébergements à Marseille</h2>
-            <ul class="link-hosting">
+            <ul class="link_hosting">
                 <li class="item1">
                     <a href="#">
                         <img src="./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
@@ -192,7 +184,7 @@
                 </li>
             </ul>
             <div class="item7">
-                <h3>Afficher plus</h3>
+                <a href="#">Afficher plus</a>
             </div>
         </section>
 
@@ -308,7 +300,8 @@
     <!--FOOTER-->
 
     <footer>
-        <div class="foot">
+        <div class="footer_element">
+            <!--footer-element-->
             <h3>A propos</h3>
             <ul>
                 <li><a class="function-link" href="#function">Fonctionnement du site</a></li>
@@ -316,14 +309,14 @@
                 <li><a class="confidentiality-link" href="#confidentiality">Données et confidentialité</a></li>
             </ul>
         </div>
-        <div class="foot">
+        <div class="footer_element">
             <h3>Nos Hébergements</h3>
             <ul>
                 <li><a class="charter-link" href="#charter">Charte qualité</a></li>
                 <li><a class="hotel-link" href="#hotel">Soumettre votre hôtel</a></li>
             </ul>
         </div>
-        <div class="foot">
+        <div class="footer_element">
             <h3>Assistance</h3>
             <ul>
                 <li><a class="help-link" href="#help">Centre d'aide</a></li>
